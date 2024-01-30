@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Form</title>
+</head>
+<body>
+    <h2>Tags Form</h2>
+
+    <h3>Formulário de cadastro</h3>
+
+    <p>São as tags utilizadas para preenchimento e envio de formulários, são campos onde será solicitado que o usuário insira dados. </p>
+
+    <!--Sobre os atributos da tag form:
+        name: nome atribuido para o formulário.
+        target blank: abre uma nova janela no navegador.
+        action: endereço para onde os dados serão enviados.
+        autocomplete: completa as suas infomações toda vez que acessar o formulário.
+        method POST: envia dados de forma segura, criptografados.onsubmit alert: Exibe mensagem na tela-->
+    <form name="signup" target="_blank" action="#" autocomplete="on" method="POST" onsubmit="alert('Formulário enviado');">
+        Nome: <input type="text" name="name" /> <br>
+        Idade: <input type="number" name="age" /> <br>
+        Senha: <input type="password" name="password" /> <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

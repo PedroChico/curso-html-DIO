@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio</title>
+</head>
+<body>
+    <h2><i>Checkbox e Radio</i></h2>
+    <h4><i>* São muito usados na criação de formulários HTML *</i> </h4>
+    <!--DIFERENÇAS DO CHECKBOX E RADIO:-->
+    <!--O Checkbox tem o seu campo quadrado, o ícone de seleção é um V, e "tem múltiplas escolhas".-->
+    <!--O Radio tem o seu campo redondo, o ícone de seleção é uma bolinha, e não tem múltiplas escolhas, permite selecionar apenas uma das opções.-->
+
+    <form method="post"></form>
+    <h3>Você selecionou: Pizza de Calabresa</h3>
+    <p>Quais opcionais você deseja?</p>
+    <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
+    <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
+    <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+    <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona<br>
+
+    <p>Borda recheada?</p>
+    <input type="radio" name="borda" value="sim">Sim <br>
+    <input type="radio" name="borda" value="nao">Não <br>
+    
+    <p>Bebida:</p>
+    <input type="radio" name="bebida" value="suco">Suco <br>
+    <input type="radio" name="bebida" value="refrigerante">Refrigerante <br>
+    <input type="radio" name="bebida" value="agua">Água <br><br>
+    <input type="submit" value="Enviar pedido">
+
+    <!--* IMPORTANTE: *-->
+    <!--No caso do Checkbox, podem ser enviados para o servidor mais que um ítem (+ queijo, + cebola, + azeitona), para que servidor receba corretamente todos itens ao invés d receber somente o último, temos que avisá-lo que se trata dfe uma lista. Por esse motivo colocamos name="opcional[]", pois os colchetes informam ao servidor que setrata de uma lista.-->
+    <!--O servidor lerá desta forma: $opcional["queijo", "cebola, azeitona"] em forma de lista, e processará todos os itens.-->
+</body>
+</html>

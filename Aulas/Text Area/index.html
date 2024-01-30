@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea</title>
+</head>
+<body>
+    <h2>Textarea</h2>
+    <p>Usado para que o usuário posssa incluir um texto mais longo.</p>
+
+    <form onsubmit="" method="post">
+        <label>Nome: </label><input type="text" name="name"><br><br>
+        <label>Cargo: </label>
+        <select name="role"> 
+            <option value="">Selecione o cargo</option>
+            <option value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select>
+        <br><br>
+        <label>Assunto</label><input type="text" name="subject"><br><br>
+        <label>Mensagem: </label><br><textarea name="message" ></textarea><br><br><!--Aqui está o nosso textarea-->
+        <button type="submit">Enviar</button>
+        </form>
+</body>
+</html>

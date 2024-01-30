@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button e seus tipos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Button e seus tipos</h2>
+    <hr><br>
+    <!--Há três tipos de Button, que funcionam de forma semelhante, mas que tem funções diferentes-->
+    <form method="post">
+        <label>Nome:</label><input type="text" name="name"><br><br>
+        <label>Idade:</label><input type="number" name="age"><br><br>
+        <label>Senha:</label><input type="password" name="password"><br><br>
+    <!--Abaixo temos o primeiro tipo de Button (button), que é um botão clicável simplesmente, que não fará nada, e que somente aplicando um comando Javascript nele, teremos um resultado-->
+        <button type="button" onclick="alert('Cliquei aqui!')">Clicável</button><br><br>
+        <hr><br><br>
+    <!--Abaixo outro tipo de button (reset), que serve para limpar os campos que foram digitados ou selecionados-->
+    <form method="post">
+        <label>Nome:</label><input type="text" name="name"><br><br>
+        <label>Idade:</label><input type="number" name="age"><br><br>
+        <label>Senha:</label><input type="password" name="password"><br><br>
+        <button type="reset">Limpar</button><br><br>
+        <hr><br><br>
+    <!--E o terceiro tipo de Button (submit), que é o botão que realemente vai enviar os dados do formulário-->
+    <form method="post">
+        <label>Nome:</label><input type="text" name="name"><br><br>
+        <label>Idade:</label><input type="number" name="age"><br><br>
+        <label>Senha:</label><input type="password" name="password"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
