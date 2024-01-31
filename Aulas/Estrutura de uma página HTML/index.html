@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de uma página HTML</title>
+    <style>
+        span {
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <h2>Estrutura de uma página HTML</h2>
+
+    <p>De nada adianta você sair colocando tags, textos, etc se você não sabe como estruturar o seu HTML, lembre-se que depois do HTML vem o CSS. Para que o CSS possa deixar a sua página bonita, ela precisa estar bem estruturada</p>
+
+    <p>As tags (div) e (span) são também chamadas de tags coringas. Sempre usamos essas duas tags para estruturar uma página web, porque elas não carregam "peso semântico", então elas servem para delimitar um espaço, para depois manipularmos esses espaços com o CSS.</p>
+
+    <p>As (div) servem para separar um mais espaços e dizer o que erá colocado dentro delas. As div não tem atributos. A div é uma tag do tipo display block, ou seja, ela ocupa a horizontal inteira de onde ela está inserida</p>
+
+    <div id="menu-lateral">
+        <div id="links">
+            <ul>
+                <li><a href="#"></a>Link 1</li>
+                <li><a href="#"></a>Link 2</li>
+                <li><a href="#"></a>Link 3</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <p>As tags (span) não ocupam o espaço todo de ponde está inserida, sendo assim podemos usá-las para posteriormente no CSS trablarmos somente aquele ponto. No CSS não conseguimos dar cor a uma só letra, com a tag span abraçando aquela letra ou trecho, aí conseguimos.</p>
+
+    <p>Dio<span>.</span>me</p> 
+
+    <p><span>Dio</span>.me</p>
+
+    <p>Dio.<span>me</span>
+    </p>
+
+
+
+
+
+
+    
+</body>
+</html>
